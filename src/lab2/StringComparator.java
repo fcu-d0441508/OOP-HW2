@@ -6,6 +6,10 @@ public class StringComparator {
 		
 		Scanner keyboard =new Scanner(System.in);
 		
+		int flag=0;
+		
+		do
+		{
 		System.out.print("Enter a string1:");
 		String name1=keyboard.next();
 		System.out.print("Enter a string2:");
@@ -14,10 +18,13 @@ public class StringComparator {
 		
 		
 		if(name1.equalsIgnoreCase(name2))
-			System.out.println("The two srings are the same");
+			{
+				System.out.println("The two srings are the same");
+				break;
+			}
 		else
 			System.out.println("The two srings are not the same");
-
+		}while(flag==0);
 	}
 
 }
